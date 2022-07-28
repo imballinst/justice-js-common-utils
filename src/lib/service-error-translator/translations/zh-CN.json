@@ -66,6 +66,7 @@
   "adminServiceError.30374": "SKU 已存在。 请再试一次。",
   "adminServiceError.31178": "超出时间范围",
   "adminServiceError.33271": "所选名称空间和区域的付款配置已经存在。",
+  "adminServiceError.34042": "奖励条件更新失败。 请移除或更改任何非活动或已删除的项目。",
   "adminServiceError.34071": "奖励代码已经存在。 请尝试另一个",
   "adminServiceError.36141": "该命名空间中不存在该货币。",
   "adminServiceError.37171": "代码兑换名称已存在。 再试一次。",

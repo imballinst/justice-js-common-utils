@@ -66,6 +66,7 @@
   "adminServiceError.30374": "SKU already exist. Please try again.",
   "adminServiceError.31178": "Entitlement out of time range",
   "adminServiceError.33271": "Payment configuration for the selected namespace and region already exists.",
+  "adminServiceError.34042": "Failed to update reward condition. Please remove or change any inactive or deleted items.",
   "adminServiceError.34071": "Reward code already exists. Please try another one",
   "adminServiceError.36141": "Currency does not exist in namespace",
   "adminServiceError.37171": "Code Redemption Name already exists. Try again.",

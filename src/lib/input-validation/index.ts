@@ -47,3 +47,4 @@ export * from "./constant/errorType";
 export * from "./constant/numbers";
 export * from "./utils/regexGenerator";
 export * from "./validateEventPayload";
+export * from "./validateStatisticCode"

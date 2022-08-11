@@ -6,6 +6,8 @@
   "adminServiceError.10138": "验证码不匹配",
   "adminServiceError.10139": "平台帐户不存在",
   "adminServiceError.10140": "用户已经过验证",
+  "adminServiceError.10142": "对不起，您的新密码不能是相同的旧",
+  "adminServiceError.10143": "您输入的密码不匹配。请确保输入正确的密码",
   "adminServiceError.10145": "只有出版商管理员可以执行此操作",
   "adminServiceError.10146": "用户ID不匹配",
   "adminServiceError.10148": "不正确的上下文",

@@ -12,6 +12,12 @@ export const IAMAdminErrorTranslationMap: { [key: string]: React.ReactNode } = {
   20022: <Trans i18nKey="adminServiceError.20022">Something went wrong. You've sent an invalid request.</Trans>,
   10156: <Trans i18nKey="adminServiceError.10156">Role does not exist</Trans>,
   10130: <Trans i18nKey="adminServiceError.10130">Age does not meet the age restriction</Trans>,
+  10142: <Trans i18nKey="adminServiceError.10142">Sorry, your new password cannot be the same as the old one</Trans>,
+  10143: (
+    <Trans i18nKey="adminServiceError.10143">
+      The password that you entered does not match. Please make sure you input the correct password
+    </Trans>
+  ),
   10154: <Trans i18nKey="adminServiceError.10154">Country does not exist</Trans>,
   10133: <Trans i18nKey="adminServiceError.10133">Email address is already taken</Trans>,
   10139: <Trans i18nKey="adminServiceError.10139">Platform account does not exist</Trans>,

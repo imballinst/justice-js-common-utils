@@ -6,6 +6,8 @@
   "adminServiceError.10138": "Verification code does not match",
   "adminServiceError.10139": "Platform account does not exist",
   "adminServiceError.10140": "User is already verified",
+  "adminServiceError.10142": "Sorry, your new password cannot be the same as the old one",
+  "adminServiceError.10143": "The password that you entered does not match. Please make sure you input the correct password",
   "adminServiceError.10145": "Only Publisher Admin can perform this action",
   "adminServiceError.10146": "user id not match",
   "adminServiceError.10148": "Something went wrong. Please contact Administrator.",

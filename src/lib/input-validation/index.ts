@@ -49,3 +49,4 @@ export * from "./utils/regexGenerator";
 export * from "./validateEventPayload";
 export * from "./validateStatisticCode";
 export * from "./validateDockerImageVersion";
+export * from "./validateForbiddenWords";

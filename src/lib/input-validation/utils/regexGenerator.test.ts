@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2021. AccelByte Inc. All Rights Reserved
+ * Copyright (c) 2021-2022. AccelByte Inc. All Rights Reserved
  * This is licensed software from AccelByte Inc, for limitations
  * and restrictions contact your company contract manager.
  */
@@ -7,6 +7,7 @@
 import { validateRegex, ValidateRegexErrorType } from "../validateRegex";
 import {
   DEFAULT_DISPLAYNAME_RULE,
+  DEFAULT_EMAIL_RULE,
   DEFAULT_PASSWORD_RULE,
   DEFAULT_USERNAME_RULE,
   generatePattern,
@@ -20,6 +21,7 @@ const usernameRegex = generatePattern(DEFAULT_USERNAME_RULE);
 const displayNameRegex = generatePattern(DEFAULT_DISPLAYNAME_RULE);
 const displayNameRegexWithUnicode = generatePattern({ ...DEFAULT_DISPLAYNAME_RULE, allowUnicode: true });
 const passwordRegex = generatePattern(DEFAULT_PASSWORD_RULE);
+const emailRegex = generatePattern(DEFAULT_EMAIL_RULE);
 
 describe("validateRegex returns correct output", () => {
   // Username validation test
@@ -172,6 +174,37 @@ describe("validateRegex returns correct output", () => {
   // tslint:disable-next-line:max-line-length
   it("returns invalidFormat error string when given password with special characters exceed max repeating count", () => {
     mockValidateRegex("Password@@@123", passwordRegex);
+    expect(mockValidateRegex).toHaveBeenCalledTimes(1);
+    expect(mockValidateRegex).toHaveReturnedWith(ValidateRegexErrorType.invalidFormat);
+  });
+
+  // Email validation test
+  it("returns null when given valid email", () => {
+    mockValidateRegex("accelByte+18@example.com", emailRegex);
+    expect(mockValidateRegex).toHaveBeenCalledTimes(1);
+    expect(mockValidateRegex).toHaveReturnedWith(null);
+  });
+
+  it("returns `invalidFormat` when given email with invalid special character", () => {
+    mockValidateRegex("accel!byte@example.com", emailRegex);
+    expect(mockValidateRegex).toHaveBeenCalledTimes(1);
+    expect(mockValidateRegex).toHaveReturnedWith(ValidateRegexErrorType.invalidFormat);
+  });
+
+  it("returns `invalidFormat` when given email with space", () => {
+    mockValidateRegex("accel byte@example.com", emailRegex);
+    expect(mockValidateRegex).toHaveBeenCalledTimes(1);
+    expect(mockValidateRegex).toHaveReturnedWith(ValidateRegexErrorType.invalidFormat);
+  });
+
+  it("returns `invalidFormat` when given email with more than 10 consecutive alphanumeric", () => {
+    mockValidateRegex("acccccccccccelbyte@example.com", emailRegex);
+    expect(mockValidateRegex).toHaveBeenCalledTimes(1);
+    expect(mockValidateRegex).toHaveReturnedWith(ValidateRegexErrorType.invalidFormat);
+  });
+
+  it("returns `invalidFormat` when given email with more than 5 consecutive special characters", () => {
+    mockValidateRegex("accel++++++byte@example.com", emailRegex);
     expect(mockValidateRegex).toHaveBeenCalledTimes(1);
     expect(mockValidateRegex).toHaveReturnedWith(ValidateRegexErrorType.invalidFormat);
   });

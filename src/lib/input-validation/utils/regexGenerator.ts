@@ -1,6 +1,6 @@
 /*
  *
- *  Copyright (c) 2021 AccelByte Inc. All Rights Reserved.
+ *  Copyright (c) 2021-2022 AccelByte Inc. All Rights Reserved.
  *  This is licensed software from AccelByte Inc, for limitations
  *  and restrictions contact your company contract manager.
  *
@@ -31,6 +31,7 @@ export const DEFAULT_USERNAME_RULE = {
   allowSpace: false,
   isCustomRegex: false,
   specialCharacters: ["_", "-"],
+  blockedWord: [],
 };
 export const DEFAULT_DISPLAYNAME_RULE = {
   regex: "()",
@@ -45,6 +46,7 @@ export const DEFAULT_DISPLAYNAME_RULE = {
   allowSpace: true,
   isCustomRegex: false,
   specialCharacters: ["'", ",", ".", "-"],
+  blockedWord: [],
 };
 export const DEFAULT_PASSWORD_RULE = {
   regex: "()",
@@ -58,6 +60,7 @@ export const DEFAULT_PASSWORD_RULE = {
   allowDigit: true,
   allowSpace: false,
   isCustomRegex: false,
+  blockedWord: [],
   specialCharacters: [
     "!",
     "~",
@@ -90,6 +93,23 @@ export const DEFAULT_PASSWORD_RULE = {
     "\\/",
   ],
 };
+export const DEFAULT_EMAIL_RULE = {
+  regex: "()",
+  maxRepeatingAlphaNum: 10,
+  maxRepeatingSpecialCharacter: 5,
+  minCharType: 0,
+  letterCase: LetterCaseEnum.any,
+  specialCharacterLocation: CharacterLocationEnum.middle,
+  allowUnicode: false,
+  allowLetter: true,
+  allowDigit: true,
+  allowSpace: false,
+  isCustomRegex: false,
+  specialCharacters: ["@", ".", "+", "_", "-"],
+  blockedWord: [],
+};
+
+export const EMAIL_DOMAIN_REGEX = "@(?:[a-zA-Z0-9-]+\\.)+[a-zA-Z]{2,7}$";
 
 export interface RegexGeneratorParam {
   regex: string;

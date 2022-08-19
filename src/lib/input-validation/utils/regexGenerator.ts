@@ -109,7 +109,7 @@ export const DEFAULT_EMAIL_RULE = {
   blockedWord: [],
 };
 
-export const EMAIL_DOMAIN_REGEX = "@(?:[a-zA-Z0-9-]+\\.)+[a-zA-Z]{2,7}$";
+export const EMAIL_DOMAIN_REGEX = "^(?:[a-zA-Z0-9-]+\\.)+[a-zA-Z]{2,7}$";
 
 export interface RegexGeneratorParam {
   regex: string;
@@ -235,8 +235,9 @@ export const generatePattern = ({
   let allowedChars = allowedCharacterString;
   if (!!allowedSpecialChars) {
     if (allowedCharacterString !== "") {
+      const quantifier = specialCharacterLocation === CharacterLocationEnum.anywhere ? "*" : "+";
       allowedChars += `${createCapturingGroup(allowedSpecialChars)}?`;
-      allowedChars += `${allowedCharacterString}+|${allowedCharacterString}`;
+      allowedChars += `${allowedCharacterString}${quantifier}|${allowedCharacterString}`;
     } else {
       allowedChars += allowedSpecialChars;
     }

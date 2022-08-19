@@ -5,10 +5,14 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## [1.34.1]
+### Fixed
+- Fix slow generated pattern when the input is long and ends with special character
+
 ## [1.34.0]
 ### Added
 - Default rule for custom email validation
--  Add new validation `validateForbiddenWords` to validate whether there is a forbidden word in a string
+- Add new validation `validateForbiddenWords` to validate whether there is a forbidden word in a string
 
 ## [1.33.5]
 ### Added

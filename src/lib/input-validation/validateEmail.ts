@@ -18,7 +18,7 @@ export interface ValidateEmailOptions {
 }
 
 export const validateEmail = (value: string, { isRequired = true }: ValidateEmailOptions = {}) => {
-  const REGEX = "^[a-zA-Z0-9_+&*-]+(?:\\.[a-zA-Z0-9_+&*-]+)*@(?:[a-zA-Z0-9-]+\\.)+[a-zA-Z]{2,7}$";
+  const REGEX = "^[a-zA-Z0-9_+&*-]+(?:\\.[a-zA-Z0-9_+&*-]+)*@(?:[a-zA-Z0-9-]+\\.)+[a-zA-Z]{2,15}$";
   if (isEmpty(value)) {
     if (!isRequired) {
       return null;

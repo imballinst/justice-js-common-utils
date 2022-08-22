@@ -109,7 +109,7 @@ export const DEFAULT_EMAIL_RULE = {
   blockedWord: [],
 };
 
-export const EMAIL_DOMAIN_REGEX = "^(?:[a-zA-Z0-9-]+\\.)+[a-zA-Z]{2,7}$";
+export const EMAIL_DOMAIN_REGEX = "^(?:[a-zA-Z0-9-]+\\.)+[a-zA-Z]{2,15}$";
 
 export interface RegexGeneratorParam {
   regex: string;

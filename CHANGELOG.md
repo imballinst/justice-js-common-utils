@@ -5,6 +5,10 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## [1.34.2]
+### [Fixed]
+- Fix email domain length from 7 to 15
+
 ## [1.34.1]
 ### Fixed
 - Fix slow generated pattern when the input is long and ends with special character

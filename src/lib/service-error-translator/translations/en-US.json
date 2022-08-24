@@ -155,5 +155,6 @@
   "serviceError.35125": "The maximum balance amount has been exceeded.",
   "serviceError.38121": "You can only purchase 1 copy of this item.",
   "serviceError.38171": "Sorry, you already own this item",
+  "serviceError.31145": "Sorry! The item you've selected doesn't exist in this Option Box.",
   "serviceError.unknown": "Failed to complete the request"
 }

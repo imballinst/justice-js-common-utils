@@ -155,5 +155,6 @@
   "serviceError.35125": "超出了最大余额。",
   "serviceError.38121": "您只能购买1个副本。",
   "serviceError.38171": "很抱歉，您已拥有这项商品",
+  "serviceError.31145": "对不起！ 您选择的项目在此选项框中不存在。",
   "serviceError.unknown": "无法完成请求"
 }

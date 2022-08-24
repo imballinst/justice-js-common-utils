@@ -46,4 +46,7 @@ export const EcommerceErrorTranslationMap: { [key: string]: React.ReactNode } = 
   38121: (
     <Trans i18nKey="serviceError.38121">You can only purchase 1 copy of this item.</Trans>
   ),
+  31145: (
+    <Trans i18nKey="serviceError.31145">Sorry! The item you've selected doesn't exist in this Option Box.</Trans>
+  ),
 };

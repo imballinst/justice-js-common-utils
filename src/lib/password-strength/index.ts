@@ -4,7 +4,7 @@
  * and restrictions contact your company contract manager.
  */
 
-import unsafePassword from "./constant/passwordGraph.json";
-import passwordGraph from "./constant/unsafePassword.json";
+import passwordGraph from "./constant/passwordGraph.json";
+import unsafePassword from "./constant/unsafePassword.json";
 
 export { unsafePassword, passwordGraph };

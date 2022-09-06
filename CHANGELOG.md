@@ -5,9 +5,14 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## [1.35.2]
+### Added
+- add new special character for `DEFAULT_PASSWORD_RULE` at input validation
+
 ## [1.35.1]
 ### Fixed
 - fix  `passwordGraph` and `unsafePassword` got mixed up
+
 ## [1.35.0]
 ### Added
 - Added password-stregth library, containing  `passwordGraph` and `unsafePassword` for `zxcvbn-ts` package that will be use for creating password strength meter

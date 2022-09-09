@@ -91,10 +91,11 @@ export const DEFAULT_PASSWORD_RULE = {
     "\\^",
     "\\@",
     "\\/",
-    "`",
-    "'",
-    "{",
-    "}",
+    "\\\\",
+    "\\`",
+    "\\'",
+    "\\{",
+    "\\}",
   ],
 };
 export const DEFAULT_EMAIL_RULE = {

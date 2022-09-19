@@ -108,6 +108,7 @@
   "adminServiceError.771904": "Type name already exists. Please try another one",
   "adminServiceError.772804": "Tag Name already exists. Please try another one",
   "adminServiceError.84103": "Reason group name already exists. Please try another one",
+  "adminServiceError.12275": "The default value must be within range of Min. Value & Max. Value",
   "serviceError.10130": "Sorry, we are unable to process this request",
   "serviceError.10133": "Sorry, you must enter a new email address",
   "serviceError.10136": "Sorry, you've entered the codes incorrectly too many times. Please request a new one",

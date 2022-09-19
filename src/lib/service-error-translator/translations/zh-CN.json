@@ -108,6 +108,7 @@
   "adminServiceError.771904": "类型名称已经存在。 请尝试另一个",
   "adminServiceError.772804": "标记名称已存在。 请尝试另一个",
   "adminServiceError.84103": "原因组名称已存在。请尝试另一个",
+  "adminServiceError.12275": "默认值必须在最小值范围内。 价值和最大。 价值",
   "serviceError.10130": "对不起，我们无法处理此请求",
   "serviceError.10133": "很抱歉，您必须输入新的电子邮件地址",
   "serviceError.10136": "抱歉，您输入了错误的密码太多次了。 请要求一个新的",

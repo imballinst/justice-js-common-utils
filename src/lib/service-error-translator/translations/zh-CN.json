@@ -64,7 +64,7 @@
   "adminServiceError.30142": "在该命名空间中不存在已发布的商店。",
   "adminServiceError.30326": "订阅项目不能捆绑",
   "adminServiceError.30327": "无效的商品试用价",
-  "adminServiceError.30341": "在该赛季所对应的商店中存在一个或多个未发布或未激活的商品。",
+  "adminServiceError.30341": "包含的一项或多项在您的商店中未激活或未发布。请发布或删除它们以继续",
   "adminServiceError.30374": "SKU 已存在。 请再试一次。",
   "adminServiceError.31178": "超出时间范围",
   "adminServiceError.33271": "所选名称空间和区域的付款配置已经存在。",

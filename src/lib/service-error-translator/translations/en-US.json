@@ -64,7 +64,7 @@
   "adminServiceError.30142": "Published store does not exist in namespace",
   "adminServiceError.30326": "Subscription item cannot be bundled",
   "adminServiceError.30327": "Invalid item trial price",
-  "adminServiceError.30341": "There are one or more reward items that are not published or activated in the store.",
+  "adminServiceError.30341": "One or more of the included items are not active or published in your store. Please publish or remove them to continue",
   "adminServiceError.30374": "SKU already exist. Please try again.",
   "adminServiceError.31178": "Entitlement out of time range",
   "adminServiceError.33271": "Payment configuration for the selected namespace and region already exists.",

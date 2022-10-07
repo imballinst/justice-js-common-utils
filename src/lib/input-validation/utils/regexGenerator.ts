@@ -261,7 +261,11 @@ export const generatePattern = ({
 
   if (maxRepeatingSpecialCharacter > 0 && specialCharacters.length > 0) {
     const specials = specialCharacters.join("");
-    result += `(?!.*([${specials}])\\${capturingGroupNum.toString()}{${maxRepeatingSpecialCharacter.toString()},})`;
+    if (allowAllSpecialCharacters) {
+      result += `(?!.*([_\\W])\\${capturingGroupNum.toString()}{${maxRepeatingSpecialCharacter.toString()},})`;
+    } else {
+      result += `(?!.*([${specials}])\\${capturingGroupNum.toString()}{${maxRepeatingSpecialCharacter.toString()},})`;
+    }
   }
 
   result += createCapturingGroup(allowedChars);

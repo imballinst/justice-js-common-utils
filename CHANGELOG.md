@@ -5,6 +5,10 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## [1.36.2]
+### Fixed
+- Fix setting `allowAllSpecialCharacters` to `true` causes password to be valid by fulfilling only 2 rules while `minCharType` is 3
+
 ## [1.36.1]
 ### Fixed
 - Fix max repeating character behavior when `allowAllSpecialCharacters` is `true` in `generatePattern`

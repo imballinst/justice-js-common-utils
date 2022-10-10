@@ -198,7 +198,7 @@ export const generatePattern = ({
   let allowedSpecialChars: string = "";
 
   if (allowAllSpecialCharacters) {
-    specialChars = allowSpace ? "_\\W" : "_\\S";
+    specialChars = "_\\W";
     specialCharacters = [specialChars];
   }
 
@@ -269,6 +269,11 @@ export const generatePattern = ({
   }
 
   result += createCapturingGroup(allowedChars);
+
+  if (!allowSpace && allowAllSpecialCharacters) {
+    result += createCapturingGroup(`[^\\s]`);
+  }
+
   if (allowedCharacterString !== "") {
     result += "*";
   }

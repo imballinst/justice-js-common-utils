@@ -57,7 +57,7 @@
   "adminServiceError.20017": "用户必须先链接到项目的命名空间，然后才能获得所选项目的权限",
   "adminServiceError.20019": "出了些问题。请与管理员联系。",
   "adminServiceError.20022": "出了些问题。你发送一个无效的请求。",
-  "adminServiceError.30071": "当关联的捆绑包/选项框仍处于选中状态时，无法取消选择此项",
+  "adminServiceError.30071": "当关联的捆绑包/自选宝箱/随机宝箱仍处于选中状态时，无法取消选择此项",
   "adminServiceError.30072": "当其中仍有选择的项目时，无法取消选择此类别。",
   "adminServiceError.30074": "当关联的订阅仍处于选中状态时，无法取消选择此项目",
   "adminServiceError.30141": "该草稿商店不存在或已删除于当前命名空间。",

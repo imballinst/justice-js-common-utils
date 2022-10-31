@@ -57,7 +57,7 @@
   "adminServiceError.20017": "The user must be linked to the item's namespace before entitled to the selected item",
   "adminServiceError.20019": "Something went wrong. Please contact Administrator.",
   "adminServiceError.20022": "Something went wrong. You've sent an invalid request.",
-  "adminServiceError.30071": "This item cannot be deselected while the associated bundle/option box is still selected",
+  "adminServiceError.30071": "This item cannot be deselected while the associated bundle/option box/loot box is still selected",
   "adminServiceError.30072": "This category cannot be deselected while there are still items selected within it.",
   "adminServiceError.30074": "This item cannot be deselected while the associated subscription is still selected",
   "adminServiceError.30141": "The draft store does not exist or deleted in namespace",

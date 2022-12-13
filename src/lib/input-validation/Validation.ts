@@ -34,6 +34,10 @@ export class Validation<T> {
     this.subscriber = new Set();
   }
 
+  public isValid(key: keyof T) {
+    return !this.validationMap.get(key);
+  }
+
   public isAllValid() {
     if (this.validationMap.size === 0) {
       return true;

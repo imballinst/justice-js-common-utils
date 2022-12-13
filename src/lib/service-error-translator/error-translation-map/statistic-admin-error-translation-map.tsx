@@ -8,7 +8,9 @@ import * as React from "react";
 import { Trans } from "react-i18next";
 
 export const StatisticAdminErrorTranslationMap: { [key: string]: React.ReactNode } = {
-  12275: <Trans i18nKey="adminServiceError.12275">The default value must be within range of Min. Value & Max. Value</Trans>,
+  12275: (
+    <Trans i18nKey="adminServiceError.12275">The default value must be within range of Min. Value & Max. Value</Trans>
+  ),
   20000: <Trans i18nKey="adminServiceError.20000">Something went wrong. Please contact Administrator.</Trans>,
   20002: <Trans i18nKey="adminServiceError.20002">Please correct the errors in the form to proceed</Trans>,
   70131: <Trans i18nKey="adminServiceError.70131">Configuration does not exist</Trans>,

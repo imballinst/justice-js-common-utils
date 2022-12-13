@@ -12,6 +12,7 @@ describe("Return isAllValid function with correct output", () => {
     const called = validation.isAllValid();
     expect(called).toBe(true);
   });
+
   it("Should return true if validation has value and all value are null", () => {
     const validation: Validation<{
       "variable 1": string;
@@ -24,6 +25,7 @@ describe("Return isAllValid function with correct output", () => {
     const isAllValid = validation.isAllValid();
     expect(isAllValid).toBe(true);
   });
+
   it("Should return false if validation has string value and null at the end of array", () => {
     const validation: Validation<{
       "variable 1": string;
@@ -36,6 +38,7 @@ describe("Return isAllValid function with correct output", () => {
     const isAllValid = validation.isAllValid();
     expect(isAllValid).toBe(false);
   });
+
   it("Should return false if validation has string value and null in the beginning of array", () => {
     const validation: Validation<{
       "variable 1": string;
@@ -48,6 +51,7 @@ describe("Return isAllValid function with correct output", () => {
     const isAllValid = validation.isAllValid();
     expect(isAllValid).toBe(false);
   });
+
   it("Should return false if validation has string value and null in the middle of array", () => {
     const validation: Validation<{
       "variable 1": string;
@@ -60,6 +64,7 @@ describe("Return isAllValid function with correct output", () => {
     const isAllValid = validation.isAllValid();
     expect(isAllValid).toBe(false);
   });
+
   it("Should return false if all value contain string", () => {
     const validation: Validation<{
       "variable 1": string;
@@ -72,7 +77,8 @@ describe("Return isAllValid function with correct output", () => {
     const isAllValid = validation.isAllValid();
     expect(isAllValid).toBe(false);
   });
-  it("Should return false if value contain empty string", () => {
+
+  it("Should return false if value contain non empty string", () => {
     const validation: Validation<{
       "variable 1": string;
       "variable 2": string;
@@ -83,5 +89,28 @@ describe("Return isAllValid function with correct output", () => {
     validation.set("variable 3", null);
     const isAllValid = validation.isAllValid();
     expect(isAllValid).toBe(false);
+  });
+
+  it("isValid should return `true` if the validation is null", () => {
+    const validation: Validation<{ field: string }> = new Validation();
+    validation.set("field", null);
+
+    const isFieldValid = validation.isValid("field");
+    expect(isFieldValid).toBe(true);
+  });
+
+  it("isValid should return `true` if we haven't validated it", () => {
+    const validation: Validation<{ field: string }> = new Validation();
+
+    const isFieldValid = validation.isValid("field");
+    expect(isFieldValid).toBe(true);
+  });
+
+  it("isValid should return `false` if the validation is not null or undefined", () => {
+    const validation: Validation<{ field: string }> = new Validation();
+    validation.set("field", "containsBadWords");
+
+    const isFieldValid = validation.isValid("field");
+    expect(isFieldValid).toBe(false);
   });
 });

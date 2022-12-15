@@ -23,6 +23,11 @@ export const EcommerceAdminErrorTranslationMap: { [key: string]: React.ReactNode
       This item cannot be deselected while the associated subscription is still selected
     </Trans>
   ),
+  30075: (
+    <Trans i18nKey="adminServiceError.30075">
+      This display cannot be deselected while the associated section is still selected
+    </Trans>
+  ),
   30141: <Trans i18nKey="adminServiceError.30141">The draft store does not exist or deleted in namespace</Trans>,
   30326: <Trans i18nKey="adminServiceError.30326">Subscription item cannot be bundled</Trans>,
   30327: <Trans i18nKey="adminServiceError.30327">Invalid item trial price</Trans>,

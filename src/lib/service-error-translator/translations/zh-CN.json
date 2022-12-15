@@ -60,6 +60,7 @@
   "adminServiceError.30071": "当关联的捆绑包/自选宝箱/随机宝箱仍处于选中状态时，无法取消选择此项",
   "adminServiceError.30072": "当其中仍有选择的项目时，无法取消选择此类别。",
   "adminServiceError.30074": "当关联的订阅仍处于选中状态时，无法取消选择此项目",
+  "adminServiceError.30075": "当关联分段仍处于选中状态时，无法取消选中此陈列",
   "adminServiceError.30141": "该草稿商店不存在或已删除于当前命名空间。",
   "adminServiceError.30142": "在该命名空间中不存在已发布的商店。",
   "adminServiceError.30326": "订阅项目不能捆绑",

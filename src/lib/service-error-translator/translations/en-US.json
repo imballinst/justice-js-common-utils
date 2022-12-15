@@ -60,6 +60,7 @@
   "adminServiceError.30071": "This item cannot be deselected while the associated bundle/option box/loot box is still selected",
   "adminServiceError.30072": "This category cannot be deselected while there are still items selected within it.",
   "adminServiceError.30074": "This item cannot be deselected while the associated subscription is still selected",
+  "adminServiceError.30075": "This display cannot be deselected while the associated section is still selected",
   "adminServiceError.30141": "The draft store does not exist or deleted in namespace",
   "adminServiceError.30142": "Published store does not exist in namespace",
   "adminServiceError.30326": "Subscription item cannot be bundled",

@@ -6,16 +6,6 @@
   "repository": "git+ssh://git@bitbucket.org/accelbyte/justice-js-common-utils.git",
   "license": "MIT",
   "keywords": [],
-  "scripts-info": {
-    "info": "Display information about the package scripts",
-    "build": "Clean and rebuild the project",
-    "fix": "Try to automatically fix any linting problems",
-    "test": "Lint and unit test the project",
-    "watch": "Watch and rebuild the project on save, then rerun relevant tests",
-    "doc": "Generate HTML API documentation and open it in a browser",
-    "doc:json": "Generate API documentation in typedoc JSON format",
-    "reset": "Delete all untracked files and reset the repo to the last commit"
-  },
   "engines": {
     "node": ">=8.9"
   },

@@ -43,7 +43,11 @@
     "node": ">=8.9"
   },
   "peerDependencies": {
-    "react": "^17.0.2"
+    "flat": "^4.1.0",
+    "i18next": "^17.0.7",
+    "react": "^17.0.2",
+    "react-i18next": "^10.11.4",
+    "validator": "^11.1.0"
   },
   "devDependencies": {
     "@bitjson/npm-scripts-info": "^1.0.0",

@@ -42,8 +42,7 @@
     "node": ">=8.9"
   },
   "peerDependencies": {
-    "react": "16.8.6",
-    "validator": "11.1.0"
+    "react": "16.8.6"
   },
   "devDependencies": {
     "@bitjson/npm-scripts-info": "1.0.0",

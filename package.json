@@ -6,9 +6,6 @@
   "repository": "git+ssh://git@bitbucket.org/accelbyte/justice-js-common-utils.git",
   "license": "MIT",
   "keywords": [],
-  "engines": {
-    "node": ">=8.9"
-  },
   "peerDependencies": {
     "flat": "^4.1.0",
     "i18next": "^17.0.7",

@@ -42,7 +42,6 @@
     "node": ">=8.9"
   },
   "peerDependencies": {
-    "flat": "4.1.1",
     "i18next": "17.0.7",
     "react": "16.8.6",
     "react-i18next": "10.11.4",
@@ -55,7 +54,6 @@
     "@types/node": "12.6.8",
     "@types/react": "16.8.24",
     "@types/validator": "10.11.2",
-    "flat": "4.1.1",
     "husky": "3.0.1",
     "i18next": "17.0.7",
     "i18next-scanner": "2.10.2",

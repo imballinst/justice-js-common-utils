@@ -43,11 +43,11 @@
     "node": ">=8.9"
   },
   "peerDependencies": {
-    "flat": "^4.1.0",
+    "flat": "^5.0.2",
     "i18next": "^22.4.8",
     "react": "^16.8.6",
     "react-i18next": "^12.1.1",
-    "validator": "^11.1.0"
+    "validator": "^13.7.0"
   },
   "devDependencies": {
     "@bitjson/npm-scripts-info": "^1.0.0",
@@ -56,7 +56,7 @@
     "@types/node": "^12.6.8",
     "@types/react": "^16.8.24",
     "@types/validator": "^10.11.2",
-    "flat": "^4.1.0",
+    "flat": "^5.0.2",
     "husky": "^3.0.1",
     "i18next": "^22.4.8",
     "i18next-scanner": "^2.10.2",
@@ -78,7 +78,7 @@
     "tslint-config-prettier": "^1.18.0",
     "typedoc": "^0.15.0",
     "typescript": "^3.5.3",
-    "validator": "^11.1.0",
+    "validator": "^13.7.0",
     "whatwg-fetch": "^3.0.0"
   },
   "husky": {

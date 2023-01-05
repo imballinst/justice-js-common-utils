@@ -58,15 +58,9 @@
     "validator": "^11.1.0",
     "whatwg-fetch": "^3.0.0"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "yarn run precommit"
-    }
-  },
   "dependencies": {
     "@types/xregexp": "^3.0.30",
     "naughty-words": "^1.1.0",
     "xregexp": "^4.3.0"
-  },
-  "sideEffects": false
+  }
 }

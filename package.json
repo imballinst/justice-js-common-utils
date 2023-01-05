@@ -43,7 +43,7 @@
   },
   "peerDependencies": {
     "react": "16.8.6",
-    "validator": "13.5.1"
+    "validator": "13.6.1"
   },
   "devDependencies": {
     "@bitjson/npm-scripts-info": "1.0.0",
@@ -73,7 +73,7 @@
     "tslint-config-prettier": "1.18.0",
     "typedoc": "0.15.0",
     "typescript": "3.5.3",
-    "validator": "13.5.1",
+    "validator": "13.6.1",
     "whatwg-fetch": "3.0.0"
   },
   "dependencies": {

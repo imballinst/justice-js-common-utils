@@ -44,7 +44,6 @@
   },
   "peerDependencies": {
     "flat": "^4.1.0",
-    "i18next": "^17.0.7",
     "react": "^16.8.6"
   },
   "devDependencies": {

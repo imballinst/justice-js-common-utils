@@ -43,9 +43,7 @@
     "node": ">=8.9"
   },
   "peerDependencies": {
-    "i18next": "^17.0.7",
     "react": "^16.8.6",
-    "react-i18next": "^10.11.4",
     "validator": "^11.1.0"
   },
   "devDependencies": {

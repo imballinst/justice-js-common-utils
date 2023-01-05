@@ -1,6 +1,6 @@
 {
   "name": "justice-js-common-utils",
-  "version": "1.36.7",
+  "version": "1.36.5",
   "description": "AccelByte's Justice Common Javascript Utilities",
   "main": "build/main/index.js",
   "typings": "build/main/index.d.ts",
@@ -43,14 +43,18 @@
     "node": ">=8.9"
   },
   "peerDependencies": {
-    "react": "^16.8.6"
+    "flat": "^4.1.0",
+    "react": "^16.8.6",
+    "validator": "^11.1.0"
   },
   "devDependencies": {
     "@bitjson/npm-scripts-info": "^1.0.0",
+    "@types/flat": "^0.0.28",
     "@types/jest": "^24.0.15",
     "@types/node": "^12.6.8",
     "@types/react": "^16.8.24",
     "@types/validator": "^10.11.2",
+    "flat": "^4.1.0",
     "husky": "^3.0.1",
     "i18next": "^17.0.7",
     "i18next-scanner": "^2.10.2",

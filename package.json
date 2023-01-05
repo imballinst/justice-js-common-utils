@@ -43,8 +43,9 @@
     "node": ">=8.9"
   },
   "peerDependencies": {
-    "flat": "^4.1.0",
-    "react": "^16.8.6"
+    "i18next": "^17.0.7",
+    "react": "^16.8.6",
+    "react-i18next": "^10.11.4"
   },
   "devDependencies": {
     "@bitjson/npm-scripts-info": "^1.0.0",

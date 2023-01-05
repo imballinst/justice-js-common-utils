@@ -5,12 +5,5 @@
   "main": "index.js",
   "repository": "git+ssh://git@bitbucket.org/accelbyte/justice-js-common-utils.git",
   "license": "MIT",
-  "keywords": [],
-  "peerDependencies": {
-    "flat": "^4.1.0",
-    "i18next": "^17.0.7",
-    "react": "^16.8.6",
-    "react-i18next": "^10.11.4",
-    "validator": "^11.1.0"
-  }
+  "keywords": []
 }
